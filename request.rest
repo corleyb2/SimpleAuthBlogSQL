@@ -1,0 +1,31 @@
+GET http://localhost:3000/users
+
+###
+
+POST http://localhost:3000/user
+Content-Type: application/json
+  
+  {
+    "username": "Froggy",
+    "password": "ribbit1"
+  }
+
+###
+
+GET http://localhost:3000/blogPosts
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Ik9sbGllIiwiaWF0IjoxNTg2ODk3NDA1fQ.aHXkjW5QxqYfVJf6O27w2JuhOtXbwmB1iI_jQiC39BQ
+
+###
+
+POST http://localhost:3000/blogPosts
+Content-Type: application/json
+
+{
+  "username": "5e9713aae340717385741dfd",
+  "postBody": "Wacky waving inflatable arm flailing tubemen"
+}
+
+###
+
+GET http://localhost:3000/user
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Ik9sbGllIiwiaWF0IjoxNTg2ODk3NDA1fQ.aHXkjW5QxqYfVJf6O27w2JuhOtXbwmB1iI_jQiC39BQ

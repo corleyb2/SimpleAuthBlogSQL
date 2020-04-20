@@ -1,0 +1,32 @@
+POST http://localhost:3000/user
+Content-Type: application/json
+
+{
+    "username": "Abc",
+    "password": "Test123"
+}
+
+###
+
+POST http://localhost:3000/users/login
+Content-Type: application/json
+
+{
+    "username": "Rrr",
+    "password": "Woods1"
+}
+
+###
+
+POST http://localhost:3000/blogPosts
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IlJyciIsImlkIjoyLCJpYXQiOjE1ODcwNzA2MzN9.0yDFuu8mTbUbkmE2-GxYmFFcYOKQTmFuSPo2T_vTT_o
+
+{
+    "title": "I wrote this",
+    "blog": "Lunch was a meal that I ate at a location unbeknownst to anyone else. Yum"
+}
+###
+
+GET http://localhost:3000/blogPosts
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IlJyciIsImlkIjoyLCJpYXQiOjE1ODcwNzA2MzN9.0yDFuu8mTbUbkmE2-GxYmFFcYOKQTmFuSPo2T_vTT_o

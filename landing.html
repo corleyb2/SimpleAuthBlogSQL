@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day Simple Auth - Landing</title>
+    <script src="/index.js"></script>
+</head>
+
+<body>
+    <h2>You're signed in!</h2>
+    <div id="render"></div>
+    <button id="logout" onclick="logout()">Log Out</button>
+
+    <br /><br /><br />
+    <div id="render-username"></div><br />
+    <label>Write a Blog</label><br />
+    <textarea id="blog-body" cols="60" rows="10"></textarea><br />
+    <button type="submit" onclick="submitBlog()">Submit</button>
+
+
+    <script>getPostsByAuthor()</script>
+
+</body>
+
+</html>
